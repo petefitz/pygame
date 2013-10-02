@@ -24,10 +24,10 @@ while done:
         if event.type == pygame.QUIT: # if we click close ...
             done=False # this will cause the loop to finish.
 
-    centerX = random.randint(1, 640)
-    centerY = random.randint(1, 480)
+    centerX = random.randint(1, width)
+    centerY = random.randint(1, height)
 
-    color = random.randint(0, 2)
+    color = random.randint(0, len(colours)-1)
     
     pygame.draw.circle(window,
                        colours[color],
